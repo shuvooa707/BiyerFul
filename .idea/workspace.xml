@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f09fdc27-5245-4ff4-afcf-699727938171" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../C  and C++/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C  and C++/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HTML" beforeDir="false" afterPath="$PROJECT_DIR$/../../../HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JavaScript/chromeExtention/ChromeLogger" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaScript/chromeExtention/ChromeLogger" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Http/Controllers/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/factories/PollFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/factories/PollFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/factories/QuestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/factories/QuestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/migrations/2019_07_08_092431_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/migrations/2019_07_08_092431_create_questions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/seeds/PollSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/database/seeds/PollSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/public/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/addProductForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/addProductForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/questions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/questions/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel Realm/parrot/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel Realm/parrot/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ToDoList" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueBlogger_(2-100)" beforeDir="false" afterPath="$PROJECT_DIR$/../blueBlogger_(2-100)" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/app/Favorite.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/app/Favorite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/app/Http/Controllers/contentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/app/Http/Controllers/contentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/app/Providers/SectionProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/app/Providers/SectionProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/config/debugbar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/config/telescope.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/public/js/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/public/js/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/resources/views/play.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/resources/views/play.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/resources/views/section/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/resources/views/section/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/routes/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/routes/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/routes/slate.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/routes/slate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blueTube_(3-100)/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueTube_(3-100)/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ecomlaravue" beforeDir="false" afterPath="$PROJECT_DIR$/../ecomlaravue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/cto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/image/homeback.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/portfolio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/projectmanager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/read me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/softwareengineer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final - PromeMehbub/teamleader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotelDarucini/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p001/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../p001/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p001/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../p001/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pollSite_(3_100)" beforeDir="false" afterPath="$PROJECT_DIR$/../pollSite_(3_100)" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pollSite_(3_100).zip" beforeDir="false" afterPath="$PROJECT_DIR$/../pollSite_(3_100).zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordass" beforeDir="false" afterPath="$PROJECT_DIR$/../wordass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../downloaded/PHP-CMS" beforeDir="false" afterPath="$PROJECT_DIR$/../../downloaded/PHP-CMS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../downloaded/b1oki_AnotherShopCMS/AnotherShopCMS" beforeDir="false" afterPath="$PROJECT_DIR$/../../downloaded/b1oki_AnotherShopCMS/AnotherShopCMS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../downloaded/elearning-script" beforeDir="false" afterPath="$PROJECT_DIR$/../../downloaded/elearning-script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../downloaded/lightCms/lightCms" beforeDir="false" afterPath="$PROJECT_DIR$/../../downloaded/lightCms/lightCms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../execution_time_test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../file_get_content.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../getClassName.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Controllers/tester.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/database/migrations/2019_07_29_110249_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/assets/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/assets/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/assets/sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/auth/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/auth/passwords/email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/auth/passwords/reset.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/auth/register.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/layouts/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laraProject_1/blog/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../makeQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../raw PHP/date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../raw PHP/namespace/app/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../raw PHP/namespace/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../raw PHP/namespace/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../raw PHP/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../raw PHP/pdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simple-php-chat-using-websocket.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simple-php-chat-using-websocket/simple-php-chat-using-websocket/class.chathandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simple-php-chat-using-websocket/simple-php-chat-using-websocket/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simple-php-chat-using-websocket/simple-php-chat-using-websocket/php-socket.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socketTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Shell/pipePractice.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Shell/pipePractice.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/TechMastersTodoApp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/TechMastersTodoApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/avYouTube/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/avYouTube/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/avYouTube/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/avYouTube/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/avYouTube/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/avYouTube/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/package-lock.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1zpDOWdXSpFHpktfhPGJi8JRPu9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f09fdc27-5245-4ff4-afcf-699727938171" name="Default Changelist" comment="" />
+      <created>1634836104365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634836104365</updated>
+      <workItem from="1634836108140" duration="470000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,96 @@
+.user .user-thumb {
+    
+}
+
+.user .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.user .user-age {
+    font-size: 18px;
+    color: black;
+}
+
+.user .fa-egg-icon  {
+    color:#aaa!important;
+    font-size: 12px!important;
+}
+
+/* user show page styles */
+
+.profile-detail-container .card {
+    box-shadow: 5px 0px 20px #ddd;
+}
+
+.profile-detail-container .card-header {
+    position: relative;
+}
+.profile-detail-container .card-header .logo {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: coral;
+    color: white;
+    z-index: 101;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    transform: translateX(-50%) translateY(-40%);
+    text-align: center;
+    line-height: 70px;
+}
+
+.profile-detail-container 
+.info-row {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 15px;
+}
+
+.profile-detail-container 
+.save-button-container {
+    width: 100%;
+    box-shadow: 0px -10px 30px #ddd;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1010;
+    background: white;
+}
+.profile-detail-container 
+.profile-image-galary-container  {
+    position: relative;
+    text-align: center;
+}
+.profile-detail-container 
+.profile-image-galary-container  .profile-image-galary {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    overflow: hidden;
+    height: 50px;
+    
+}
+.profile-detail-container 
+.profile-image-galary-container .prev-button  {
+    width: 30px;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    cursor: pointer;
+}
+.profile-detail-container 
+.profile-image-galary-container .next-button  {
+    width: 30px;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.liked {
+    background-color: coral;
+    color: white;
+}

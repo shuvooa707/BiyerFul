@@ -1,2 +1,2 @@
 # biyerful
-BiyerFul Is a PHP application made following MVC architechtural pattern. When building this application all the conventional coding rules like DRY, SOLID was given priority.
+BiyerFul Is a PHP application made following MVC architechtural pattern. When building this application, coding practices and principles like DRY, KISS SOLID etc was given priority.

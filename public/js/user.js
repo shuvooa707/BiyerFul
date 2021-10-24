@@ -19,6 +19,7 @@ function like(likeButton) {
         method : "POST",
         body : payload
     })
+    
     .then( r => r.json() )
     .then( r => {
         if ( r.msg == "success" ) {

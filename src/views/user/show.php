@@ -1,10 +1,3 @@
-<?php
-// check if logged in
-if (!check()) {
-    header("Location:/");
-    exit(0);
-}
-?>
 
 <?php require_once __DIR__ . "/../layout/header.php"; ?>
 
@@ -29,22 +22,22 @@ inlcudeScript([
 
 
 <div class="container profile-detail-container" data-id="<?php echo $user["id"]; ?>">
-    <div class="row my-5">
-        <div class="col-lg-4">
+    <div class="row my-5  justify-content-around">
+        <div class="col-lg-3">
             <div class="card">
                 <div class="card-body m-0 p-0" style="min-height: 200px;">
-                    <img class="w-100" src="../public/image/<?php echo $user["image"]; ?>" alt="">
+                    <img class="w-100 user-profile-picture" src="../public/image/<?php echo $user["image"]; ?>" alt="">
                 </div>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-7">
             <div class="card">
                 <div class="card-body m-0 p-0" style="min-height: 200px;">
-                    <button class="btn m-2 px-2 py-1 <?php if ($liked) echo "liked"; ?>" onclick="like(this)" data-type="<?php $liked ? print("liked") : print("like") ?>">
+                    <button class="btn like-button m-2 px-2 py-1 <?php if ($liked) echo "liked"; ?>" onclick="like(this)" data-type="<?php $liked ? print("liked") : print("like") ?>">
                         <?php $liked ? print("Liked") : print("Like"); ?>
                         <i class="fas fa-thumbs-up"></i>
                     </button>
-                    <button class="btn m-2 px-2 py-1" onclick="ignore()">
+                    <button class="btn ignore-button m-2 px-2 py-1 <?php if ($ignored) echo "liked"; ?>" onclick="ignore(this)">
                         Ignore
                         <i class="fas fa-thumbs-down"></i>
                     </button>
@@ -64,8 +57,9 @@ inlcudeScript([
             </div>
         </div>
     </div>
-    <div class="row mt-5 justify-content-between">
-        <div class="col-lg-6 col-md-12">
+    <br>
+    <div class="row mt-3 justify-content-around">
+        <div class="col-lg-5 col-md-12">
             <div class="card w-100 bio-data">
                 <div class="card-header bg-info text-light py-1">
                     <span class="logo">
@@ -81,7 +75,7 @@ inlcudeScript([
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-5 col-md-12">
             <div class="card w-100 bio-data">
                 <div class="card-header bg-info text-light py-1">
                     <span class="logo">

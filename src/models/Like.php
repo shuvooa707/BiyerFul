@@ -11,9 +11,32 @@
             $this->table = "likes";
         }
 
-        public function isLiked($userid)
+        public function isLiked($subjectid)
         {
-            $sql = "select count(*) yes from $this->table where user_id=" . user()["id"] . " and liked_user_id=" .$userid;
+            // if not logged in 
+            if ( !check() ) 
+            {
+                return false;
+            }
+            $sql = "select count(*) yes from $this->table where type='like' AND  user_id=" . user()["id"] . " and subject_user_id=" . $subjectid;
+            $r = $this->query($sql)->fetch()["yes"];
+            if ( $r ) 
+            {
+                return true;    
+            }
+            else 
+            {
+                return false;
+            }
+        }
+        public function isIgnored($subjectid)
+        {
+            // if not logged in 
+            if ( !check() ) 
+            {
+                return false;
+            }
+            $sql = "select count(*) yes from $this->table where type='ignore' AND  user_id=" . user()["id"] . " and subject_user_id=" . $subjectid;
             $r = $this->query($sql)->fetch()["yes"];
             if ( $r ) 
             {

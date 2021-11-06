@@ -6,8 +6,9 @@ use Biyerful\models\User;
 use Biyerful\models\Like;
 use Biyerful\services\DB;
 
-class UserController 
+class UserController extends Controller
 {
+
     function index()
     {
         view("user.index");
@@ -19,13 +20,18 @@ class UserController
         preg_match("/(?<=user\/)\d+$/", $param, $userid);
         $user = (new User())->find(end($userid));
         $liked = (new Like())->isLiked($user["id"]);
+        $ignored = (new Like())->isIgnored($user["id"]);
 
-        // dd($liked);
+
         if (!$user) 
         {
             header("Location:/worngRoute");
         }
-        view("user.show", ["user" => $user, "liked" => $liked]);
+        view("user.show", [
+            "user" => $user, 
+            "liked" => $liked, 
+            "ignored" => $ignored
+        ]);
         exit(0);
     }
 
@@ -49,7 +55,6 @@ class UserController
 
     function update()
     {
-        dd($_POST);
         die;
     }
 
@@ -63,17 +68,50 @@ class UserController
     {
         if ( request("userid") && is_int((int)request("userid")) && request("type") ) 
         {
-            if ( request("type") != "like" ) 
-            {
-                return $this->unlike();
-            }
+            // remove both like & ignore first
             $whoLikes = user()["id"];
             $whomLiked = request("userid");
             $db = new DB();
-            $r = $db->query("INSERT INTO `likes`(`user_id`, `liked_user_id`) VALUES ($whoLikes,$whomLiked)");
+            $r = $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND subject_user_id=$whomLiked");
+            
+            
+            $whoLikes = user()["id"];
+            $whomLiked = request("userid");
+            $db = new DB();
+            $r = $db->query("INSERT INTO `likes`(`user_id`, `subject_user_id`, `type`) VALUES ($whoLikes,$whomLiked, 'like')");
             if ( $r ) 
             {
+                $this->backup();
                 response(["msg" => "success", "type" => "liked"]);
+            }
+            else 
+            {
+                response(["msg" => "failed"]);
+            }
+        }
+        else 
+        {
+            response(["msg" => "failed"]);
+        }
+    }
+
+    // for ignoring any profile
+    function ignore()
+    {
+        if ( request("userid") && is_int((int)request("userid")) && request("type") ) 
+        {
+            $whoLikes = user()["id"];
+            $whomIgnored = request("userid");
+            $db = new DB();
+
+            // first delete the liked (if any)
+            $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND subject_user_id=$whomIgnored");
+
+            $r = $db->query("INSERT INTO `likes`(`user_id`, `subject_user_id`, `type`) VALUES ($whoLikes, $whomIgnored, 'ignore')");
+            if ( $r ) 
+            {
+                $this->backup();
+                response(["msg" => "success", "type" => "ignored"]);
             }
             else 
             {
@@ -91,16 +129,16 @@ class UserController
         $whoLikes = user()["id"];
         $whomLiked = request("userid");
         $db = new DB();
-        $r = $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND liked_user_id=$whomLiked");
+        $r = $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND subject_user_id=$whomLiked");
         if ($r) 
         {
+            $this->backup();
             response(["msg" => "success", "type" => "unliked"]);
         } 
         else 
         {
             response(["msg" => "failed"]);
         }
-
     }
 
 }

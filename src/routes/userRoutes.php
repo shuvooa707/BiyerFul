@@ -62,19 +62,14 @@ else if ( preg_match('/(\/)?user\/store$/i', $param) && $_SERVER["REQUEST_METHOD
 // show user
 else if ( preg_match('/(\/)?user\/\d+$/i', $param) ) 
 {
+    // check if logged in
+    if (!check()) 
+    {
+        header("Location:/");
+        exit(0);
+    }
+
     $userController->show($param);
-    // $path = __DIR__ . "/../controller/UserController.php";
-    // if ( file_exists($path) ) 
-    // {
-    //     // including the controller 
-    //     require_once $path;
-    //     // invoking the method
-    // }
-    // else
-    // {
-    //     require_once __DIR__ . "/../controller/NotFoundController.php";
-    //     error("NotFoundController Not Found");
-    // }
 }
 
 // edit user
@@ -114,7 +109,7 @@ else if ( preg_match('/(\/)?user\/update$/i', $param) && $_SERVER["REQUEST_METHO
 }
 
 // destroy user
-elseif (preg_match('/(\/)?user\/destroy$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST")
+else if (preg_match('/(\/)?user\/destroy$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST")
 {
     $path = __DIR__ . "/../controller/UserController.php";
     if (file_exists($path)) {
@@ -130,16 +125,17 @@ elseif (preg_match('/(\/)?user\/destroy$/i', $param) && $_SERVER["REQUEST_METHOD
 
 
 // like user
-elseif (preg_match('/(\/)?user\/like$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST") {
+else if (preg_match('/(\/)?user\/like$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $userController->like();
-    // $path = __DIR__ . "/../controller/UserController.php";
-    // if (file_exists($path)) 
-    // {
-    //     // including the controller 
-    //     require_once $path;
-    //     // invoking the method
-    // } else {
-    //     require_once __DIR__ . "/../controller/NotFoundController.php";
-    //     error("NotFoundController Not Found");
-    // }
+}
+
+// unlike user
+else if (preg_match('/(\/)?user\/unlike$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST") {
+    $userController->unlike();
+}
+
+
+// ignore user
+else if (preg_match('/(\/)?user\/ignore$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST") {
+    $userController->ignore();
 }

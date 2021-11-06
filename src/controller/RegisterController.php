@@ -23,7 +23,7 @@ class RegisterController
     {
 
         /***   Save file    ***/
-        if (isset($_FILES['image'])) 
+        if ( isset($_FILES['image']) ) 
         {
             $errors = array();
             $file_name = time();
@@ -31,22 +31,21 @@ class RegisterController
             $file_tmp = $_FILES['image']['tmp_name'];
             $file_ext = explode('.', $_FILES['image']['name']);
             $file_ext = array_pop($file_ext);
-
             $extensions = array("jpeg", "jpg", "png");
 
-            if (in_array($file_ext, $extensions) === false) 
+            if ( in_array($file_ext, $extensions) === false ) 
             {
                 $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
             }
 
-            if ($file_size > 2097152) 
+            if ( $file_size > 20097152 ) 
             {
                 $errors[] = 'File size must be excately 2 MB';
             }
 
             if (empty($errors) == true) 
             {
-                move_uploaded_file($file_tmp, url("image/") . $file_name . "." . $file_ext);
+                move_uploaded_file($file_tmp, "." . url("image/") . $file_name . "." . $file_ext);
             } 
             else 
             {
@@ -59,6 +58,7 @@ class RegisterController
         $user = $this->model->create([
             "name" => request("fname") . " " . request("fname"),
             "slug" => str_replace(" ","-", trim(request("fname") . " " . request("fname"))),
+            "gender" => request("gender"),
             "age" => request("age"),
             "email" => request("email"),
             "image" => $file_name . "." . $file_ext,
@@ -76,8 +76,9 @@ class RegisterController
         } 
         else 
         {
+            session("login-attempted", true);
             header("Location:/register");
-            die();
+            die(0);
         }
 
         exit(0);

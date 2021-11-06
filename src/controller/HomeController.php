@@ -6,22 +6,9 @@ use Biyerful\services\DB;
 class HomeController extends Controller
 {
 
-    public function index()
+    public function index($page = 0)
     {
-        $db = new DB();
-        if ( check() &&  user()["gender"] == "male" )
-        {
-            $users = $db->query("select * from users where gender = 'female' ")->fetchAll();
-        }
-        else if( check() && user()["gender"] == "female") 
-        {
-            $users = $db->query("select * from users where gender = 'male' ")->fetchAll();
-        }
-        else 
-        {
-            $users = $db->query("select * from users")->fetchAll();
-        }
-        // dd( $users );
+        $users = $this->visibleUsers($page);
         view("home.index",["users" => $users, "totalUsers" => count($users)]);
         exit(0);
     }
@@ -29,6 +16,29 @@ class HomeController extends Controller
     public function store()
     {
         print_r($_POST["name"]);
+    }
+
+
+    protected function visibleUsers($page = 10)
+    {
+        
+        $db = new DB();
+
+        // show only opposite gender profiles
+        if ( check() &&  user()["gender"] == "male" )
+        {
+            $users = $db->query("select * from users where gender = 'female'")->fetchAll();
+        }
+        else if( check() && user()["gender"] == "female" ) 
+        {
+            $users = $db->query("select * from users where gender = 'male' ")->fetchAll();
+        }
+        else 
+        {
+            $users = $db->query("select * from users")->fetchAll();
+        }
+
+        return $users;
     }
 
 }

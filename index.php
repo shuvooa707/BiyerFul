@@ -7,44 +7,30 @@ require_once "src/helpers/helpers.php";
 require_once "vendor/autoload.php";
 
 
-// dd($_SERVER);
 
-// dump(__DIR__, $_SERVER["REQUEST_URI"]);
-
-// Get controller Name
+// Get Controller Name
 if ($_SERVER["REQUEST_METHOD"] == "GET" || $_SERVER["REQUEST_METHOD"] == "POST") 
 {
     $param = explode("/code/PHP/Projects/biyerFul/src/", $_SERVER["REQUEST_URI"]);
     $param = end($param);
-    // dd($param);
-    // $param = $_SERVER["REQUEST_URI"];
-    // dd(preg_match('/(\/)$/i', $param));
-    // preg_match('/product\/\d+/i', $param, $param);
     
 }
 
 /*
 *
-*  Rotung Table
+*  Routing Table
+*
 *
 */
 
 //  Home 
-if ( $param == "" || $param == "/" ) 
+if ( $param == "" || $param == "/" || preg_match('/(\/)\?page=\d+$/i', $param)) 
 {
+ 
+    preg_match("/(?<=page\=)\d+/", $param, $page);
+
     $homeController = new HomeController();
-    $homeController->index();
-    // $path = "src/controller/HomeController.php";
-    // if (file_exists($path)) 
-    // {
-    //     require_once $path;
-    //     index();
-    // } 
-    // else 
-    // {
-    //     require_once "controller/NotFoundController.php";
-    //     error("NotFoundController Not Found");
-    // }
+    $homeController->index((int)$page);
     exit(0);
 } 
 

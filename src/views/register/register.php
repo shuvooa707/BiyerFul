@@ -10,6 +10,12 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
+            <?php 
+                $loginAttempted = session("login-attempted");
+                if ( $loginAttempted ) {
+                    echo "<div class='alert alert-danger mt-5'> <strong>Registration Failed </strong></div>";
+                }
+            ?>
             <div class="card my-5">
                 <div class="card-header bg-info text-light">
                     Register

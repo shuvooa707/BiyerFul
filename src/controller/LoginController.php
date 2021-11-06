@@ -10,13 +10,11 @@ function login()
 
 function signin()
 {
-    // dd($_POST);
     if ( $r = attempt(request("username"), request("password")) ) 
     {
-
         session("logged in", "yes");
         session("user_id", $r["id"]);
-        header("Location:/profile");
+        header("Location:/");
         exit(0);
     }
     else 

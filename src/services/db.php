@@ -47,14 +47,14 @@ class DB extends Connection
         $values = "'" . implode("','", array_values($pairValues)) . "'";
 
         $sql = "INSERT INTO `$this->table` ($keys) VALUES($values)";
-        // dd($sql);
         if ($this->conn->query($sql))
         {
             $query = $this->conn->prepare("SELECT * FROM `$this->table` WHERE id = " . $this->conn->lastInsertId());
             $query->execute();
             $row = $query->fetch();
-            // dd($row);
-            // dd($this->conn->lastInsertId());
+            
+            // backuing up database offline 
+            $this->backup();
             return $row;
         }
 

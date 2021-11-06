@@ -1,6 +1,10 @@
 .user .user-thumb {
     
 }
+img.user-profile-picture{
+    height: 200px;
+    object-fit: contain;
+}
 
 .user .user-name {
     font-size: 18px;

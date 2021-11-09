@@ -4,6 +4,7 @@ namespace Biyerful\controller;
 
 use Biyerful\models\User;
 use Biyerful\models\Like;
+use Biyerful\models\Shortlist;
 use Biyerful\services\DB;
 
 class UserController extends Controller
@@ -21,7 +22,7 @@ class UserController extends Controller
         $user = (new User())->find(end($userid));
         $liked = (new Like())->isLiked($user["id"]);
         $ignored = (new Like())->isIgnored($user["id"]);
-
+        $shortlisted = (new Shortlist())->isShortlisted($user["id"]);
 
         if (!$user) 
         {
@@ -30,7 +31,8 @@ class UserController extends Controller
         view("user.show", [
             "user" => $user, 
             "liked" => $liked, 
-            "ignored" => $ignored
+            "ignored" => $ignored,
+            "shortlisted" => $shortlisted
         ]);
         exit(0);
     }
@@ -102,20 +104,37 @@ class UserController extends Controller
         {
             $whoLikes = user()["id"];
             $whomIgnored = request("userid");
+            $type = request("type");
             $db = new DB();
 
-            // first delete the liked (if any)
-            $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND subject_user_id=$whomIgnored");
-
-            $r = $db->query("INSERT INTO `likes`(`user_id`, `subject_user_id`, `type`) VALUES ($whoLikes, $whomIgnored, 'ignore')");
-            if ( $r ) 
+            if ( $type == "ignore" ) 
             {
-                $this->backup();
-                response(["msg" => "success", "type" => "ignored"]);
+                // first delete the liked (if any)
+                $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND subject_user_id=$whomIgnored");
+                $r = $db->query("INSERT INTO `likes` (`user_id`, `subject_user_id`, `type`) VALUES ($whoLikes, $whomIgnored, 'ignore')");
+                if ( $r ) 
+                {
+                    $this->backup();
+                    response(["msg" => "success", "type" => "ignored"]);
+                }
+                else 
+                {
+                    response(["msg" => "failed"]);
+                }
             }
             else 
             {
-                response(["msg" => "failed"]);
+                // first delete the liked (if any)
+                $r = $db->query("DELETE FROM likes WHERE user_id=$whoLikes AND subject_user_id=$whomIgnored");
+                if ( $r ) 
+                {
+                    $this->backup();
+                    response(["msg" => "success", "type" => "unignored"]);
+                }
+                else 
+                {
+                    response(["msg" => "failed"]);
+                }
             }
         }
         else 
@@ -124,6 +143,7 @@ class UserController extends Controller
         }
     }
 
+    // for unliking any profile
     function unlike()
     {
         $whoLikes = user()["id"];
@@ -139,6 +159,44 @@ class UserController extends Controller
         {
             response(["msg" => "failed"]);
         }
+    }
+
+
+    // add to shortlist any profile
+    function shortlist()
+    {
+        $whoDoes = user()["id"];
+        $whoShortlisted = request("userid");
+
+        if ( request("type") == "shortlist" ) 
+        {
+            $sql = "INSERT INTO `shortlisted`(`user_id`, `subject_user_id`) VALUES ('$whoDoes','$whoShortlisted')";
+            $r = $this->db->query($sql);
+            if ($r) 
+            {
+                $this->backup();
+                response(["msg" => "success", "type" => "shortlisted"]);
+            } 
+            else 
+            {
+                response(["msg" => "failed"]);
+            }
+        }
+        else 
+        {
+            $sql = "DELETE FROM shortlisted WHERE user_id=$whoDoes AND subject_user_id=$whoShortlisted";
+            $r = $this->db->query($sql);
+            if ($r) 
+            {
+                $this->backup();
+                response(["msg" => "success", "type" => "unshortlisted"]);
+            } 
+            else 
+            {
+                response(["msg" => "failed"]);
+            }
+        }
+
     }
 
 }

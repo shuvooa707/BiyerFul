@@ -139,3 +139,16 @@ else if (preg_match('/(\/)?user\/unlike$/i', $param) && $_SERVER["REQUEST_METHOD
 else if (preg_match('/(\/)?user\/ignore$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $userController->ignore();
 }
+
+// Shortlist User
+else if (preg_match('/(\/)?user\/shortlist$/i', $param) && $_SERVER["REQUEST_METHOD"] == "POST") {
+    $userController->shortlist();
+}
+
+
+// seed user
+else if (preg_match('/(\/)?user\/seed$/i', $param) && $_SERVER["REQUEST_METHOD"] == "GET") {
+    $userSeeder = new \Biyerful\controller\SeederController();
+    // dd($userSeeder);
+    $userSeeder->make();
+}

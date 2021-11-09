@@ -94,7 +94,7 @@ img.user-profile-picture{
     cursor: pointer;
 }
 
-.liked {
+.liked, .shortlisted {
     background-color: coral;
     color: white;
 }

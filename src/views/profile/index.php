@@ -11,7 +11,8 @@ if (!check()) {
 <!-- include page specific styles -->
 <?php
 inlcudeStyle([
-    "../public/css/user.css"
+    "../public/css/user.css",
+    "../public/css/common.css"
 ]);
 ?>
 <!-- /include page specific styles -->
@@ -20,7 +21,7 @@ inlcudeStyle([
 
 
 <div class="container profile-detail-container">
-    <div class="row mt-5 justify-content-between">
+    <div class="row mt-5 pb-5 justify-content-between">
         <div class="col-lg-4">
             <h4 class="text-right">
                 <i class="fas fa-cog"></i>
@@ -28,24 +29,32 @@ inlcudeStyle([
             <h5 class="py-2 pb-3 pl-2 mb-0 bg-info text-light">
                 <span class="name"><?php echo $param['user']["name"] ?></span>
             </h5>
-            <img class="w-100" src="../public/image/<?php echo $param['user']["image"]; ?>" alt="">
+            <img class="w-100" height="220px" src="../public/image/<?php echo $param['user']["image"]; ?>" alt="">
 
             <div class="card shadow-none mt-2">
                 <div class="card-body shadow-none p-0">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <i class="fas fa-thumbs-up"></i>
-                            <span class="cursor-pointer">Liked Profiles</span>
-                        </li>
-                        <li class="list-group-item">
+                    <ul class="list-group text-dark">
+                        <a href="/profile/shortlisted"  class="list-group-item text-dark">
                             <i class="fa fa-star"></i>
                             <span class="cursor-pointer">Shortlisted Profiles</span>
-                        </li>
+                        </a>
+                        <a href="/profile/liked" class="list-group-item text-dark">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span class="cursor-pointer">Liked Profiles</span>
+                        </a>
+                        <a href="/profile/ignored" class="list-group-item text-dark">
+                            <i class="fa fa-thumbs-down"></i>
+                            <span class="cursor-pointer">Ignored Profiles</span>
+                        </a>
+                        <a href="/profile/blocked" class="list-group-item text-dark">
+                            <i class="fa fa-thumbs-down"></i>
+                            <span class="cursor-pointer">Blocked Profiles</span>
+                        </a>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="col-lg-7 col-md-7">
+        <div class="col-lg-6 col-md-6">
             <div class="card bio-data">
                 <div class="card-header bg-info text-light py-1">
                     <span class="logo">

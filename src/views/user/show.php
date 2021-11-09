@@ -37,12 +37,12 @@ inlcudeScript([
                         <?php $liked ? print("Liked") : print("Like"); ?>
                         <i class="fas fa-thumbs-up"></i>
                     </button>
-                    <button class="btn ignore-button m-2 px-2 py-1 <?php if ($ignored) echo "liked"; ?>" onclick="ignore(this)">
-                        Ignore
+                    <button class="btn ignore-button m-2 px-2 py-1 <?php if ($ignored) echo "liked"; ?>" onclick="ignore(this)" data-type="<?php if ($ignored) echo "unignore"; else echo "ignore"; ?>">
+                        <?php if ($ignored) echo "Ignored"; else echo "Ignore"; ?>
                         <i class="fas fa-thumbs-down"></i>
                     </button>
-                    <button class="btn m-2 px-2 py-1" onclick="shortlist()">
-                        Shortlist
+                    <button class="btn m-2 px-2 py-1 <?php if ($shortlisted) echo "shortlisted"; ?>" onclick="shortlist(this)" data-type="<?php if ($shortlisted) echo "unshortlist"; else echo "shortlist"; ?>">
+                        <?php if ($shortlisted) echo "Shortlisted"; else echo "Shortlist"; ?>
                         <i class="fas fa-star text-warning"></i>
                     </button>
                     <button class="btn m-2 px-2 py-1" onclick="block()">

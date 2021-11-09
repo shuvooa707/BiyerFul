@@ -19,6 +19,10 @@ class ComposerStaticInitbe3a58b9e307d47231907c7f22966884
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
+        'F' => 
+        array (
+            'Faker\\' => 6,
+        ),
         'B' => 
         array (
             'Biyerful\\' => 9,
@@ -37,6 +41,10 @@ class ComposerStaticInitbe3a58b9e307d47231907c7f22966884
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
         'Biyerful\\' => 
         array (

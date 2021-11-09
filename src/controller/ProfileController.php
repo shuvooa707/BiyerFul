@@ -2,7 +2,7 @@
 
 namespace Biyerful\controller;
 use Biyerful\models\User;
-
+use Biyerful\services\DB;
 
 class ProfileController 
 {
@@ -50,5 +50,46 @@ class ProfileController
     public function destroy()
     {
         echo "remove User";
+    }
+
+
+    public function shortlisted()
+    {
+        $userid = check() ? user()["id"] : -1;
+        $sql = "SELECT * FROM users WHERE id IN  (SELECT subject_user_id FROM `shortlisted` WHERE user_id = $userid)";
+        $users = (new DB())->query($sql)->fetchAll();
+        
+        view("profile.shortlisted", ["users" => $users, "totalUsers" => count($users)]);
+        exit(0);
+    }
+
+    public function liked()
+    {
+        $userid = user()["id"];
+        $sql = "SELECT * FROM users WHERE id IN  (SELECT subject_user_id from likes WHERE user_id=$userid)";
+        $users = (new DB())->query($sql)->fetchAll();
+        // dd($users);
+        view("profile.liked", ["users" => $users, "totalUsers" => count($users)]);
+        exit(0);
+    }
+
+    public function ignored()
+    {
+        $userid = user()["id"];
+        $sql = "SELECT * FROM users WHERE id IN  (SELECT subject_user_id from likes WHERE user_id=$userid)";
+        $users = (new DB())->query($sql)->fetchAll();
+        // dd($users);
+        view("profile.ignored", ["users" => $users, "totalUsers" => count($users)]);
+        exit(0);
+    }
+
+    public function blocked()
+    {
+        $userid = check() ? user()["id"] : -1;
+        $sql = "SELECT * FROM users WHERE id IN  (SELECT subject_user_id FROM `blocked` WHERE user_id = $userid)";
+        $users = (new DB())->query($sql)->fetchAll();
+        
+        view("profile.blocked", ["users" => $users, "totalUsers" => count($users)]);
+        exit(0);
     }
 }

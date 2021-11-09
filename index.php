@@ -16,24 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" || $_SERVER["REQUEST_METHOD"] == "POST")
     
 }
 
-/*
-*
-*  Routing Table
-*
-*
-*/
-
-//  Home 
-if ( $param == "" || $param == "/" || preg_match('/(\/)\?page=\d+$/i', $param)) 
-{
- 
-    preg_match("/(?<=page\=)\d+/", $param, $page);
-
-    $homeController = new HomeController();
-    $homeController->index((int)$page);
-    exit(0);
-} 
-
 
 /*
 *   including all the routes

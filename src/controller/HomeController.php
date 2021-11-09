@@ -22,21 +22,34 @@ class HomeController extends Controller
     protected function visibleUsers($page = 10)
     {
         
+        if (check()) 
+        {
+            $userid = (user()["id"]);
+        }
+        else 
+        {
+            $userid = -1;
+        }
+        
         $db = new DB();
-
         // show only opposite gender profiles
         if ( check() &&  user()["gender"] == "male" )
         {
-            $users = $db->query("select * from users where gender = 'female'")->fetchAll();
+            $sql = "select * from users where gender = 'male' AND id NOT IN (SELECT subject_user_id FROM likes WHERE user_id=$userid) order by created_at limit 0,10;";
+            // dd($sql);
+            $users = $db->query($sql)->fetchAll();
         }
         else if( check() && user()["gender"] == "female" ) 
         {
-            $users = $db->query("select * from users where gender = 'male' ")->fetchAll();
+            $sql = "select * from users where gender = 'male' AND id NOT IN (SELECT subject_user_id FROM likes WHERE user_id=$userid) order by created_at limit 0,10;";
+            // dd($sql);
+            $users = $db->query($sql)->fetchAll();
         }
         else 
         {
             $users = $db->query("select * from users")->fetchAll();
         }
+
 
         return $users;
     }

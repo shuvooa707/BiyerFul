@@ -57,9 +57,11 @@ function ignore(ignoreButton) {
     
     let userid = document.querySelector(".profile-detail-container").dataset.id;
 
+    let type = ignoreButton.dataset.type;
+
     let payload = new FormData();
     payload.append("userid", userid);
-    payload.append("type", "ignore");
+    payload.append("type", type);
 
     
     // send igonre request 
@@ -80,7 +82,13 @@ function ignore(ignoreButton) {
 
                 ignoreButton.classList.add("liked");
                 ignoreButton.innerHTML = `Ignored <i class="fas fa-thumbs-down"></i>`;
+                ignoreButton.dataset.type = "unignore";
+                
             } else {
+                
+                ignoreButton.classList.remove("liked");
+                ignoreButton.innerHTML = `Ignore <i class="fas fa-thumbs-down"></i>`;
+                ignoreButton.dataset.type = "ignore";
 
             }
         } else {
@@ -90,6 +98,47 @@ function ignore(ignoreButton) {
         curtain();
     });
 }
+
+
+function shortlist(shortlistButton) {
+    
+    let userid = document.querySelector(".profile-detail-container").dataset.id;
+    let ignoreButton = document.querySelector(".ignore-button");
+    let type = shortlistButton.dataset.type;
+
+    let payload = new FormData();
+    payload.append("userid", userid);
+    payload.append("type", type);
+
+    
+    // send igonre request 
+    curtain();
+    fetch("/user/shortlist", {
+        method : "POST",
+        body : payload
+    })
+    .then( r => r.json() )
+    .then( r => {
+        if ( r.msg == "success" ) {
+            if ( r.type == "shortlisted" ) {
+
+                shortlistButton.classList.add("shortlisted");
+                shortlistButton.innerHTML = `Shortlisted <i class="fas fa-star"></i>`;
+                shortlistButton.dataset.type = 'unshortlist';
+            } else {
+                shortlistButton.dataset.type = 'shortlist';
+                shortlistButton.classList.remove("shortlisted");
+                shortlistButton.innerHTML = `Shortlist <i class="fas fa-star"></i>`;
+            }
+        } else {
+            throwAlert("Something Went Worng!!!");
+        }
+
+        curtain();
+    });
+}
+
+
 
 
 function throwAlert(msg) {
